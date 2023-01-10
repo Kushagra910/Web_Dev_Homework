@@ -1,0 +1,34 @@
+html {
+  scroll-behavior: smooth;
+}
+aside {
+  float: right;
+  width: 40%;
+  background-color:bisque;
+  font-style:italic;
+  font-weight: 500px;
+  color:crimson;
+  border:3px solid chocolate;
+}
+
+#image{
+  border-radius:15px;
+}
+
+figcaption{
+  color:brown;
+}
+
+header p{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style:italic;
+  font-weight:600;
+}
+
+.full_page{
+  background-color: rgb(12, 172, 119);
+}
+
+h1{
+  margin:0;
+}
