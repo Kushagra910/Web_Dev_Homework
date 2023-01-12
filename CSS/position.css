@@ -1,0 +1,40 @@
+.wrapper{
+  height:1000px;
+  background-color: aqua;
+}
+
+.box{
+  background-color: moccasin;
+  color:red;
+  height:30px;
+  width:50px;
+  border:1px solid black;
+  text-align: center;
+}
+#box1{
+  position:fixed;
+  top:0px;
+  left:0px;
+}
+
+#box2{
+  position:fixed;
+  right:10px;
+}
+
+#box3{
+  position:fixed;
+  bottom:0;
+  left:0;
+}
+#box4{
+  position:fixed;
+  right:0;
+  bottom:0;
+}
+
+#box5{
+  position:fixed;
+  top:50%;
+  left:50%;
+}
