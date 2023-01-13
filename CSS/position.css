@@ -1,15 +1,22 @@
+*{
+  margin:0;
+  padding:0;
+}
 .wrapper{
   height:1000px;
   background-color: aqua;
+  display:flex;
 }
 
 .box{
   background-color: moccasin;
   color:red;
-  height:30px;
+  height:50px;
   width:50px;
   border:1px solid black;
-  text-align: center;
+  text-align:center;
+  padding-top:25px;
+
 }
 #box1{
   position:fixed;
