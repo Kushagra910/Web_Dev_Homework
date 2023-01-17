@@ -25,13 +25,15 @@
     height: 100%;
     background-color: hsl(30, 38%, 92%);
     grid-template-columns: 250px;
- 
-    padding-bottom:500px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding-bottom:200px
   }
 }
 .image img{
-  max-width: 100%;
+  max-width: 100.6%;
   border-radius: 1em 0 0 1em;
+  margin-top:4px;
 }
 
 .details{
@@ -41,6 +43,7 @@
   border-radius: 0 1.5rem 1.5rem 0;
   text-align: left;
   padding-left:30px ;
+  margin-left:2px;
 }
 .title p{
   padding-top:30px;
