@@ -14,17 +14,38 @@
 
 .button{
   background-color: #e84949;
-  padding:1rem 3rem;
+  padding:0.8rem 2.3rem;
   position:relative;
   color:white;
   font-family: Arial, sans-serif;
   font-weight: 600;
   font-size:0.1rem;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.01em;
   font-size:1rem;
   border:none;
-  border-radius:0.5em;
-  box-shadow: 0.5rem 0.5rem 0.2rem wheat;
+  border-radius:0.2em;
+  box-shadow: 0.3rem 0.3rem 0.1rem 0px #0000003f;
   transition: all 0.5s;
   cursor:pointer;
+  z-index: +1;
+}
+
+.button::before{
+  content:"";
+  background-color: #1f1f1f;
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom: 0;
+  transform: scaleX(0);
+  border-radius: 0.2em;
+  transform-origin: left;
+  transition: 0.8s;
+  z-index:-1;
+}
+
+.button:hover::before{
+  transform: scaleX(1);
+  
 }
