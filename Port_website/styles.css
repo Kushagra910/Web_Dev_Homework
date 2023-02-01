@@ -450,10 +450,20 @@
   }
 
   @media (max-width:1000px) {
+
+    .nav-bar{
+      flex-wrap:wrap-reverse;
+      gap:1rem;
+      justify-content:center;
+    }
     .hero-section{
       display:grid;
       grid-template-columns: 60%;
       justify-content: center;
+      align-items: center;
+      gap:2rem;
+    }
+    .hero-section-left{
       align-items: center;
     }
     .user-image img{
@@ -483,8 +493,6 @@
     animation-iteration-count: infinite;
   }
 
-
-
   .icon-cube{
     z-index:9;
     top:1rem;
@@ -493,8 +501,6 @@
     animation-iteration-count: infinite;
     animation-duration:3s ;
   }
-
-
   .icon-circle{
     z-index:9;
     bottom: 0;
@@ -504,9 +510,6 @@
     animation-timing-function: linear;
     animation-iteration-count: infinite;
   }
-
-
-
   .icon-zigzag{
     z-index:9;
     top:1.5em;
@@ -516,9 +519,6 @@
     animation-timing-function: ease-in;
     animation-iteration-count: infinite;
   }
-
-
-
   .icon-plus{
     z-index: 9;
     top:1.2rem;
@@ -590,7 +590,34 @@
     }
     .skill-fade-text{
      font-size: 4rem;
-     top:92%;
+     top:94%;
+    }
+
+    .contact-heading{
+      font-size:1rem;
+      text-align: center;
+    }
+    #media-heading{
+      font-size:2rem;
+      text-align: center;
+    }
+    #skills{
+      display: flex;
+      flex-direction: column;
+      width:100%;
+    }
+    .left-section{
+      justify-items: center;
+    }
+    .link-wrapper{
+      display:flex;
+      flex-direction: column;
+      gap:3rem;
+    }
+    .icon-wrapper{
+      display: grid;
+      grid-template-columns: 1fr;
+      gap:1rem;
     }
   }
 
