@@ -1,0 +1,250 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+.wrapper{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(39, 198, 148);
+  position:relative;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.cover{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position:relative;
+}
+
+.circle1{
+  height: 13rem;
+  width: 13rem;
+  position:absolute;
+  background: linear-gradient(135deg, #883dc6, #ffea00);
+  top:5%;
+  left:30%;
+  border-radius: 50%;
+  box-shadow: 0 0 50px #d84869;
+  animation: slomo  15s infinite  ;
+}
+
+@keyframes slomo {
+  50%{
+    left:33%;
+    top:4%;
+    scale:1.11;
+  }
+}
+
+.circle2{
+  height: 17rem;
+  width: 17rem;
+  background-color:purple;
+  position:absolute;
+  bottom:5%;
+  right:30%;
+  border-radius:50%;
+  box-shadow: 0 0 50px #6c60d4;
+  background-image: linear-gradient(-25deg,rgb(234, 0, 255),rgb(222, 38, 38));
+  animation:slomo2 15s infinite;
+}
+@keyframes slomo2 {
+  50%{
+    bottom: 6%;
+    right: 27%;
+  }
+}
+
+.card-wrapper{
+  height: 450px;
+  position:absolute;
+  border: 2px solid #ffffff30;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background: #ffffff1a;
+  backdrop-filter: blur(15px);
+  border-radius: 15px;
+  color:rgb(37, 35, 35);;
+  padding: 20px 50px;
+}
+
+.img{
+  border: 2px solid #ffffff30;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius:50%;
+}
+.user-name h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+.designation h3 {
+  text-align: center;
+  color: rgb(37, 35, 35);;
+}
+
+.bottom-group{
+  display: flex;
+  justify-content: space-between;
+  gap:10px;
+}
+
+.btn-share {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  padding: 9px 12px;
+  background: #ffffff00;
+  border: 2px solid rgb(37, 35, 35);
+  text-transform: capitalize;
+  border-radius: 4px;
+  color:whitesmoke;
+  cursor: pointer;
+  transition: all 0.7s;
+}
+
+.btn-follow {
+  text-transform: capitalize;
+  width: 150px;
+  padding: 9px 12px;
+  background: #ffffff00;
+  border: 2px solid rgb(37, 35, 35);;
+  border-radius: 4px;
+  color: whitesmoke;
+  cursor: pointer;
+  transition: all 0.7s;
+}
+
+.btn-card:hover {
+  background: #ffffffb9;
+  color: #131313;
+}
+
+.modal{
+  position:absolute;
+  top: 50%;
+  left:50%;
+  translate: -50% -50%;
+  border: 2px solid #ffffff59;
+  width: 500px;
+  background-color: #00000088;
+  backdrop-filter: blur(10px);
+  color: white;
+  z-index: 1;
+  padding: 20px 25px;
+  border-radius: 20px;
+  transition: 0.5s ease-in-out;
+  scale:0;
+}
+.modal-header{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  align-items: center;
+  padding-bottom: 12px;
+  border-bottom:2px solid #ffffff88;
+}
+
+.cross{
+  font-size:30px;
+  cursor: pointer;
+}
+
+.icon-container{
+  margin-top: 20px;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.icon {
+  border: 1px solid #ffffff88;
+  padding: 17px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  margin: 10px 0px;
+  gap: 10px;
+  justify-content: center;
+  transition: all 0.5s;
+  margin-bottom: 25px;
+  text-decoration: none;
+}
+.icon i{
+  font-size:27px;
+}
+#facebook {
+  color: black;
+  border: 1px solid black;
+}
+#facebook:hover {
+  background-color: #1771e6;
+  color: #fff;
+  border: #1771e6;
+}
+
+#twitter {
+  color: black;
+  border: 1px solid #1c99e6;
+}
+#twitter:hover {
+  background-color: #1c99e6;
+  color: #fff;
+  border:#1c99e6;
+}
+
+#instagram {
+  color: #cb2770;
+  border: 1px solid #cb2770;
+}
+#instagram:hover {
+  background-color: #cb2770;
+  color: #fff;
+}
+
+#whatsapp {
+  color: #2fe664;
+  border: 1px solid #2fe664;
+}
+#whatsapp:hover {
+  background-color: #2fe664;
+  color: #fff;
+}
+
+#telegram {
+  color: #0081c2;
+  border: 1px solid #0081c2;
+}
+#telegram:hover {
+  background-color: #0081c2;
+  color: #fff;
+}
+.active{
+  scale:1;
+}
+
+.overlay {
+  position: absolute;
+  background-color: #5f5f5f83;
+  top: 0;
+  opacity: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+  transition: 0.5s ease-in-out;
+}
+
+.overlayactive{
+  opacity:1;
+  pointer-events: initial;
+}
